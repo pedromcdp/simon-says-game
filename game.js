@@ -23,13 +23,6 @@ $("body").keypress(function() {
     }
 });
 
-$("body").on("tap",function() {
-    if (!started){
-        started = true;
-        nextSequence();
-    }
-});
-
 function nextSequence() {
     userClickedPattern = [];
     var randomNumber = Math.floor(Math.random() * 4);
